@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    
+
 <div class="container-scroller">
     <!-- partial:partials/_sidebar.html -->
     <nav class="sidebar sidebar-offcanvas" id="sidebar" style="height: 650px;">
@@ -71,7 +71,7 @@
                 </a>
                 <div class="collapse" id="ui-basics">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"> liste des
+                        <li class="nav-item" [routerLink]="['/maintenance']"> liste des
                             notes</li>
                     </ul>
                 </div>
@@ -81,7 +81,7 @@
                     <span class="menu-icon">
                         <i class="mdi mdi-table-large text-white"></i>
                     </span>
-                    <span class="menu-title">Liste classe</span>
+                    <span class="menu-title" [routerLink]="['/maintenance']">Liste classe</span>
                 </a>
             </li>
 
@@ -105,7 +105,7 @@
                 </li>
             </ul>
             <ul class="navbar-nav navbar-nav-right">
-        
+
 
 
                 <li class="nav-item dropdown border-left">
@@ -178,7 +178,7 @@
                                 </div>
                             </div>
                             <div class="preview-item-content">
-                                <p class="preview-subject mb-1">Se deconnecter</p>
+                                <p class="preview-subject mb-1" [routerLink]="['/auth']">Se deconnecter</p>
                             </div>
                         </a>
 
@@ -191,7 +191,7 @@
             </button>
         </div>
     </nav>
-    
+
     <div class="listeval container mt-5 " style="margin: 0 auto;">
         <div >
             <h3 class="text-dark mt-5 text-center" >{{typeEval}} de {{matiere}}  du  {{date  |date: "dd/MM/yyyy"}} de la {{classe}}</h3>
@@ -211,11 +211,11 @@
                             <div class="confidentialite-form ml-3 mb-4">g</div>
                         </div>
                        <div class="table-responsive" style="color: black;">
-                     
+
                            <table class="table" style="color: black;" >
                                <thead style="color: black;">
                                    <tr style="background-color: #ce6a6b; ">
-                                       
+
                                        <th style="color: white;"> Nom </th>
                                        <th style="color: white;"> Prenom </th>
                                        <th style="color: white;"> Classe</th>
@@ -224,7 +224,7 @@
                                        <th style="color: white;"> Note </th>
                                    </tr>
                                </thead>
-                              
+
                                <tbody *ngFor="let userNote of  tabAdminApprenant ; let i = index">
                                    <tr *ngIf="userNote.classe==classe">
                                         <td> {{userNote.nom}} </td>
@@ -232,13 +232,13 @@
                                         <td> {{userNote.classe}} </td>
                                         <td> {{userNote.annee}} </td>
                                         <td> {{userNote.dateNaiss}} </td>
-                                        <td>  
+                                        <td>
                                           <form>
                                          <input type="text" name="note" [(ngModel)]="tabAdminApprenant[i].note" *ngIf="tabAdminApprenant[i].note >= 0 && tabAdminApprenant[i].note <= 20" style="width:50px">
                                        </form>
                                       </td>
 
-                                    
+
                                        </tr>
                                </tbody>
                            </table>
@@ -256,11 +256,11 @@
                             <div class="confidentialite-form ml-3 mb-4">g</div>
                         </div>
                        <div class="table-responsive" style="color: black;">
-                     
+
                            <table class="table" style="color: black;" >
                                <thead style="color: black;">
                                    <tr style="background-color: #ce6a6b; ">
-                                       
+
                                        <th style="color: white;"> Nom </th>
                                        <th style="color: white;"> Prenom </th>
                                        <th style="color: white;"> Classe</th>
@@ -269,7 +269,7 @@
                                        <th style="color: white;"> Note </th>
                                    </tr>
                                </thead>
-                              
+
                                <tbody *ngFor="let userNote of  tabAdminApprenant ; let i = index">
                                    <tr *ngIf="userNote.classe==classe">
                                         <td> {{userNote.nom}} </td>
@@ -277,11 +277,11 @@
                                         <td> {{userNote.classe}} </td>
                                         <td> {{userNote.annee}} </td>
                                         <td> {{userNote.dateNaiss}} </td>
-                                        <td>  
+                                        <td>
                                          {{userNote.note}}
                                       </td>
 
-                                    
+
                                        </tr>
                                </tbody>
                            </table>
@@ -293,8 +293,8 @@
 
     </div>
 </div>
- 
-  
+
+
 
   <!-- Modal pour modifier une note-->
   <div class="modal fade " id="modifierModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -349,12 +349,12 @@
                     <label  class="text-dark">Note :</label>
                     <input type="number" name="note" [(ngModel)]="note">
                 </div>
-                
+
                 <div class="mb-3">
                   <label for="dateInput" class="form-label text-dark date">Date:</label>
                   <input type="date" name="date" class="form-control" id="dateInput" aria-describedby="emailHelp" placeholder="Date de l'evaluation" [(ngModel)]="date">
                 </div>
-               
+
               </form>
         </div>
         <div class="modal-footer">

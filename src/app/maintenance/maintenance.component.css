@@ -1,0 +1,9 @@
+body{
+  background-color: #0594D0;
+}
+.maintenance-container {
+  text-align: center;
+  /* margin-top: 50px; */
+  background-color: white;
+  color: black;
+}

@@ -17,10 +17,10 @@
                         </div>
                         <div class="profile-name">
                             <h5 class="mb-0 font-weight-normal">Admin</h5>
-    
+
                         </div>
                     </div>
-    
+
                 </div>
             </li>
             <li class="nav-item nav-category">
@@ -65,14 +65,14 @@
                 </div>
             </li>
             <li class="nav-item menu-items d-flex mx-3">
-    
+
                 <span class="menu-icon">
                     <i class="mdi mdi-table-large text-white"></i>
                 </span>
                 <span class="menu-title fs-6">Liste classe</span>
-    
+
             </li>
-    
+
         </ul>
     </nav>
 
@@ -168,7 +168,7 @@
                                     </div>
                                 </div>
                                 <div class="preview-item-content">
-                                    <p class="preview-subject mb-1">Se deconnecter</p>
+                                    <p class="preview-subject mb-1" [routerLink]="['/auth']">Se deconnecter</p>
                                 </div>
                             </a>
 
@@ -215,7 +215,7 @@
                                     <tr>
                                         <td class="text-center">
                                             <a [routerLink]="['/detail-apprenant', epreuve.idApprenant]">
-                                           
+
                                                 <i class="bi bi-eye"  ></i>
                                               </a>
                                             <span class="pl-2">{{epreuve.prenom}}</span>
@@ -232,7 +232,7 @@
                                             {{epreuve.telephone}}
                                         </td>
                                         <td>
-                                        
+
                                             <div class="badge mx-2" id="badgeAction" (click)="toggleEtat(epreuve)">{{
                                                 (epreuve.etat === 'active') ? 'Désactiver' : 'Activer' }}</div>
                                         </td>

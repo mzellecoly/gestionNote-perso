@@ -98,9 +98,9 @@
                  </li>
              </ul>
              <ul class="navbar-nav navbar-nav-right">
-           
- 
- 
+
+
+
                  <li class="nav-item dropdown border-left">
                      <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
                          data-toggle="dropdown">
@@ -171,10 +171,10 @@
                                  </div>
                              </div>
                              <div class="preview-item-content">
-                                 <p class="preview-subject mb-1">Se deconnecter</p>
+                                 <p class="preview-subject mb-1" [routerLink]="['/auth']">Se deconnecter</p>
                              </div>
                          </a>
- 
+
                      </div>
                  </li>
              </ul>
@@ -202,13 +202,13 @@
                            <table class="table" style="color: black;">
                                <thead style="color: black;">
                                    <tr>
-                                       
+
                                        <th style="color: black;"> Effectif </th>
-                                       
-                                       
+
+
                                        <th style="color: black;"> Annee Scolaire </th>
-                                     
-                                    
+
+
                                        <th style="color: black;"> Classe</th>
                                        <th style="color: black;"> Action</th>
                                    </tr>
@@ -218,12 +218,12 @@
                                        <td >
                                            <span class="pl-2">{{epreuve.matiere}}</span>
                                        </td>
-                                    
-                                       
+
+
                                        <td> {{epreuve.annee}} </td>
-                                     
-                                       
-                                      
+
+
+
                                        <td>
                                            {{epreuve.classe}}
                                        </td>
@@ -250,7 +250,7 @@
 
 
 
-  
+
   <!-- Modal -->
   <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -275,9 +275,9 @@
                           <option value="3e">3e</option>
                         </select>
                 </div>
-                
-               
-               
+
+
+
               </form>
         </div>
         <div class="modal-footer">

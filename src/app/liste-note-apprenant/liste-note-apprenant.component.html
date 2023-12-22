@@ -13,7 +13,7 @@
         <!-- partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-                <p class="sidebar-brand brand-logo text-white" 
+                <p class="sidebar-brand brand-logo text-white"
                 style="font-weight: bold; font-size: 1.6em;"  [routerLink]="['/dashboard']">G6 ACADEMY</p>
                 <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg"
                         alt="logo" /></a>
@@ -45,7 +45,7 @@
                         <span class="menu-title" [routerLink]="['/listenoteapprenant']">Liste Note</span>
                     </a>
                 </li>
-               
+
             </ul>
         </nav>
         <!-- partial -->
@@ -138,7 +138,7 @@
                                         </div>
                                     </div>
                                     <div class="preview-item-content">
-                                        <p class="preview-subject mb-1">Se deconnecter</p>
+                                        <p class="preview-subject mb-1" [routerLink]="['/auth']">Se deconnecter</p>
                                     </div>
                                 </a>
 
@@ -246,7 +246,7 @@
                                                     <td>{{apprenant.dateNaiss}}</td>
                                                     <td>{{apprenant.annee}}</td>
                                                   </tr>
-                                                
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -259,7 +259,7 @@
             <!-- main-panel ends -->
         </div>
         <!-- page-body-wrapper ends -->
-       
+
 
     </div>
     <!-- container-scroller -->

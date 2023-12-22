@@ -69,8 +69,8 @@
               <span class="menu-icon">
                   <i class="mdi mdi-table-large text-white"></i>
               </span>
-              <span class="menu-title fs-6">Liste classe</span>
-          
+              <span class="menu-title fs-6" [routerLink]="['/maintenance']">Liste classe</span>
+
       </li>
 
   </ul>
@@ -98,10 +98,10 @@
             <li class="nav-item dropdown d-none d-lg-block">
                 <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown"
                     data-toggle="dropdown" aria-expanded="false" href="#">+ Ajouter une classe</a>
-  
+
             </li>
-  
-  
+
+
             <li class="nav-item dropdown border-left">
                 <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
                     data-toggle="dropdown">
@@ -172,10 +172,10 @@
                             </div>
                         </div>
                         <div class="preview-item-content">
-                            <p class="preview-subject mb-1">Se deconnecter</p>
+                            <p class="preview-subject mb-1" [routerLink]="['/auth']">Se deconnecter</p>
                         </div>
                     </a>
-  
+
                 </div>
             </li>
         </ul>

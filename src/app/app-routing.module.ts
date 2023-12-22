@@ -10,6 +10,7 @@ import { GestionNoteComponent } from './gestion-note/gestion-note.component';
 import { DetailsProfesseursComponent } from './details-professeurs/details-professeurs.component';
 
 import { DetailsApprenantsComponent } from './details-apprenants/details-apprenants.component';
+import { MaintenanceComponent } from './maintenance/maintenance.component';
 
 const routes: Routes = [
   {path: 'dashboard', component:DashboardAdminComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:'listenoteapprenant/:id', component:ListeNoteApprenantComponent},
   {path:'gestionnote/:id', component:GestionNoteComponent},
   {path:'detail-professeur/:id', component:DetailsProfesseursComponent},
-  {path:'detail-apprenant/:id', component:DetailsApprenantsComponent}
+  {path:'detail-apprenant/:id', component:DetailsApprenantsComponent},
+  {path:'maintenance', component:MaintenanceComponent}
 ];
 
 @NgModule({
